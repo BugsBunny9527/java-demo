@@ -9,4 +9,11 @@ public class Realsubject implements Subject {
     public void action() {
         System.out.println("我是被代理类，记得要执行我哦！么么哒~~");
     }
+
+    /**
+     * 接口实现类特有的方法
+     */
+    public void sayHello(){
+        System.out.println("Hello World");
+    }
 }

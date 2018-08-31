@@ -30,7 +30,12 @@ public class ProxyTest {
         Object obj = handler.bind(realsubject);
         Subject subject = (Subject)obj;//此时obj就是代理类的对象
 
+
         subject.action();//转到对InvacationHandler接口的实现类的invoke()方法的调用
+
+        //验证动态代理能否代理接口实现类特有的方法
+        realsubject = (Realsubject)obj;//强制类型转换出错：com.sun.proxy.$Proxy2 cannot be cast to com.java.dynamicProxy.Realsubject
+        realsubject.sayHello();
     }
 
     /**
