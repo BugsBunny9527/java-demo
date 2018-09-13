@@ -10,17 +10,14 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>demo-reflection</artifactId>
+    <artifactId>demo-primitive_types</artifactId>
 
     <dependencies>
-
-        <!-- Junit 依赖 -->
         <dependency>
             <groupId>junit</groupId>
             <artifactId>junit</artifactId>
             <scope>test</scope>
         </dependency>
-
     </dependencies>
 
 </project>
